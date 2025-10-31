@@ -118,7 +118,7 @@ function parseURL(path: string): RouteParams | null {
 // 🎯 CUSTOM 404 PAGE - CORRECTED JSX
 // ============================================
 
-const Custom404Page: React.FC<Custom404PageProps> = ({
+const Custom404Page: React.FC = ({
   setCurrentPage,
   setActiveView,
   setIs404,

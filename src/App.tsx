@@ -565,14 +565,14 @@ const DynamicMarketplacePage: React.FC<DynamicPageProps> = ({
       metaDescription,
       keywords: keywords.join(", "),
       longFormContent,
-      canonical: buildCanonicalURL({
-        city,
-        state,
-        category,
-        neighborhood,
-        zipCode,
-        searchQuery,
-      }),
+canonical: buildCanonicalURL({
+  city: city || '',
+  state: state || '',
+  category: category || '',
+  neighborhood: neighborhood || '',
+  zipCode: zipCode || '',
+  searchQuery: searchQuery || '',
+}),
     };
   }, [city, state, category, neighborhood, zipCode, searchQuery]);
 
